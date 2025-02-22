@@ -1,0 +1,55 @@
+/* Estilos para o contêiner geral (opcional, se você quiser um contêiner maior) */
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha no topo, não no centro vertical */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+    background-color: #f0f0f0; /* Cor de fundo para o body (opcional) */
+    margin: 0; /* Remove margens padrão do body */
+    font-family: sans-serif; /* Fonte padrão */
+}
+
+/* Estilos para cada bloco de publicação */
+.publicacao-container {
+    background-color: rgb(221, 216, 216);
+    width: 700px; /* Largura fixa (você pode usar porcentagem para responsividade) */
+    padding: 30px 50px 50px 60px;  /* padding: top right bottom left; */
+    margin-bottom: 0; /* Remove espaçamento extra */
+    text-align: justify; /* Justifica o texto dentro da publicação */
+    box-sizing: border-box; /* Importante: Inclui padding e border na largura total */
+}
+/*Estilo primeira publicação*/
+.publicacao-container:first-of-type{
+    margin-top: 30px;/*Só pra primeira*/
+}
+
+/* Estilos para a data */
+.data {
+    color: darkcyan;
+    margin-bottom: 0; /* Remove espaçamento abaixo da data */
+    text-align: left; /* Alinha a data à esquerda*/
+    padding-left: 60px;
+    /*Para ajustar a data*/
+
+}
+
+/* Estilos para o título da publicação */
+.publicacao {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Estilos para a linha horizontal */
+hr {
+     border: none; /* Remove a borda padrão */
+    border-top: 1px solid #ddd; /* Adiciona uma borda superior mais sutil */
+    margin: 0; /* Zera as margens */
+    width: 760px;/*Largura igual do bloco de publicação*/
+    margin-left: 50px;/*Centraliza*/
+
+}
+/*Para não ter a linha no final */
+ hr:last-of-type{
+    display: none;
+}

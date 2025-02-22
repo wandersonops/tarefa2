@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Meta tag viewport para responsividade em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House of the Rising Sun</title>
+  <style>
+    /* Carregamento otimizado da fonte Inter do Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    
+    /* Reset básico e layout flexível para preencher a tela */
+    body {
+      font-family: 'Inter', sans-serif; /* Aplicando a fonte carregada */
+      margin: 0; /* Remove margens padrão */
+      min-height: 100vh; /* Altura mínima da viewport */
+      display: flex;
+      flex-direction: column; /* Organiza elementos em coluna */
+      background-color: #f0f0f0; /* Cor de fundo suave */
+    }
+
+    header {
+      background-color: #7b7bc5;
+      padding: 20px 0; /* Espaçamento interno superior/inferior */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0; /* Remove margem padrão */
+      color: white;
+      font-weight: 600; /* Peso da fonte semi-negrito */
+    }
+
+    /* Container principal responsivo */
+    main {
+      background-color: #c4bbbb;
+      border: 2px solid black;
+      width: 90%; /* Largura relativa */
+      max-width: 500px; /* Largura máxima para telas grandes */
+      margin: 20px auto; /* Centralização horizontal */
+      padding: 20px; /* Espaçamento interno */
+      border-radius: 10px; /* Bordas arredondadas */
+      flex-grow: 1; /* Preenche espaço disponível */
+    }
+
+    /* Footer fixo na parte inferior */
+    footer {
+      background-color: #706c6c;
+      color: white;
+      padding: 10px;
+      margin-top: auto; /* Mantém no final da página */
+      border-top: 2px solid black;
+    }
+
+    /* Estilização responsiva da imagem */
+    img {
+      width: 150px; /* Tamanho fixo proporcional */
+      height: 150px;
+      border-radius: 50%; /* Efeito círculo */
+      display: block;
+      margin: 0 auto 20px; /* Centraliza e adiciona margem inferior */
+      object-fit: cover; /* Garante proporção da imagem */
+      border: 3px solid white; /* Borda decorativa */
+      box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Sombra para profundidade */
+    }
+
+    /* Melhoria na legibilidade do texto */
+    p {
+      font-size: 1em; /* Unidade relativa */
+      line-height: 1.6; /* Espaçamento entre linhas */
+      margin: 15px 0; /* Espaçamento externo */
+      text-align: center; /* Alinhamento centralizado */
+    }
+
+    /* Player de áudio estilizado */
+    audio {
+      display: block;
+      margin: 20px auto; /* Centralização */
+      width: 80%; /* Largura responsiva */
+    }
+
+    /* Linha decorativa no header */
+    hr {
+      border: 1px solid rgba(255,255,255,0.5); /* Linha semi-transparente */
+      margin: 10px auto; /* Centralizada */
+      width: 50%; /* Largura relativa */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>House of the Rising Sun</h1>
+    <hr><!-- Linha decorativa abaixo do título -->
+  </header>
+
+  <main>
+    <!-- Imagem com acessibilidade melhorada -->
+    <img src="download.jpg" alt="The Animals cantando">
+    
+    <!-- Container dedicado para as letras -->
+    <div class="lyrics">
+      <p>There is a house in New Orleans<br>
+      They call the Rising Sun<br>
+      And it's been the ruin of many a poor boy<br>
+      Dear God, I know I was one</p>
+      <!-- ... restante das letras ... -->
+    </div>
+
+    <!-- Player de áudio funcional -->
+    <audio controls> <!-- Atributo controls adicionado -->
+      <source src="The Animals - House Of The Rising Sun (lyrics).mp3" type="audio/mp3">
+      Mensagem para navegadores sem suporte a áudio
+    </audio>
+  </main>
+
+  <!-- Footer semântico com informação de direitos -->
+  <footer>
+    © Wanderson Pereira <!-- Símbolo de copyright adicionado -->
+  </footer>
+</body>
+</html>

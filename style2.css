@@ -1,0 +1,37 @@
+/* Reset básico para garantir consistência entre navegadores */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove os marcadores de lista */
+}
+
+body {
+    font-family: sans-serif; /* Fonte padrão */
+}
+
+/* Estilo do menu de navegação verde */
+.menu-verde {
+    background-color: #2E8B57; /* Verde floresta (SeaGreen) - Cor de fundo do menu */
+}
+
+.menu-verde ul {
+    display: flex; /* Coloca os itens do menu em linha (horizontal) */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 15px; /* Espaçamento interno no menu */
+}
+
+.menu-verde li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+.menu-verde a {
+    display: block; /* Faz o link ocupar todo o espaço do item */
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+}
+
+.menu-verde a:hover {
+    background-color: #3CB371; /* Verde médio (MediumSeaGreen) - Cor de fundo no hover */
+}
